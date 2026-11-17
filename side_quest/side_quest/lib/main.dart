@@ -27,6 +27,7 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
@@ -36,10 +37,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         // Set the background color of the app bar
-        backgroundColor: const Color(0xFFBCE1CF),
-        
+        backgroundColor: const Color(0xFFBCE1CF),      
         // Set the title of the app bar
-        title: Image.asset('build/flutter_assets/images/logo.png', height: 36, fit: BoxFit.contain),
+        title: Image.asset('assets/mini_logo.png', height: 56, fit: BoxFit.contain),
       ),
       
       // The main body of the scaffold
