@@ -10,5 +10,18 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const LoginScreen());
+  runApp(const SideQuestApp());
+}
+
+class SideQuestApp extends StatelessWidget {
+  const SideQuestApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SideQuest',
+      debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
+    );
+  }
 }

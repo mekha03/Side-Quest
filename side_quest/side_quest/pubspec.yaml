@@ -23,3 +23,12 @@ flutter:
 
   assets:
   - assets/
+
+  fonts:
+  - family: Gotcha
+    fonts:
+      - asset: assets/fonts/Hey Gotcha Regular.otf
+    
+  - family: ChunkFive
+    fonts:
+      - asset: assets/fonts/chunkfive.regular.ttf
