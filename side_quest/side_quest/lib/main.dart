@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:side_quest/screens/login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,57 +10,5 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage()
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  // ignore: library_private_types_in_public_api
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // Set the background color of the app bar
-        backgroundColor: const Color(0xFFBCE1CF),      
-        // Set the title of the app bar
-        title: Image.asset('assets/mini_logo.png', height: 56, fit: BoxFit.contain),
-      ),
-      
-      // The main body of the scaffold
-      body: const Center(
-        
-        // Display a centered text widget
-        child: Text(
-          "sidequest",
-          
-          // Apply text styling
-          style: TextStyle(
-            
-            // Set font size
-            fontSize: 24,          
-            
-            // Set font weight
-            fontWeight: FontWeight.bold, 
-          ),
-        ),
-      ),
-    );
-  }
+  runApp(const LoginScreen());
 }
