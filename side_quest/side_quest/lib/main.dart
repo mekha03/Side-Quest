@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:side_quest/screens/preview/eventCardPreview.dart';
 import 'firebase_options.dart';
 import 'package:side_quest/screens/login.dart';
 
@@ -21,7 +22,7 @@ class SideQuestApp extends StatelessWidget {
     return MaterialApp(
       title: 'SideQuest',
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: const EventCardPreview(),
     );
   }
 }
