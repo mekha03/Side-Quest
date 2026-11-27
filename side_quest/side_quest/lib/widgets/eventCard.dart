@@ -4,12 +4,16 @@ class EventCard extends StatelessWidget {
   final String eventName;
   final String address;
   final String dateTime;
+  final bool saved;
+  final List interested;
 
   const EventCard({
     super.key,
     required this.eventName,
     required this.address,
     required this.dateTime,
+    required this.saved,
+    this.interested = const[]
   });
 
   @override

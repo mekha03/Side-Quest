@@ -13,6 +13,7 @@ class EventCardPreview extends StatelessWidget {
           eventName: 'Art Workshop',
           address: 'Downtown Edmonton',
           dateTime: 'Nov 28 · 6:00 PM',
+          saved: false
         ),
       ),
     );
